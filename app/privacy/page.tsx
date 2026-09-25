@@ -1,0 +1,4 @@
+import type { Metadata } from "next";
+import { site } from "@/lib/site";
+export const metadata: Metadata = { title: "プライバシーポリシー", description: "PCノートのプライバシーポリシー。", alternates: site.canonical("/privacy/") };
+export default function PrivacyPage() { return <section className="container prose-page"><p className="eyebrow">PRIVACY</p><h1>プライバシーポリシー</h1><p className="page-lead">現時点で導入している機能と、将来導入する場合の取り扱いを区別して記載します。</p><h2>アクセス解析</h2><p>現在、アクセス解析サービスは導入していません。将来導入する場合は、サービス名、取得する情報、利用目的、無効化やオプトアウトの方法を、導入前に本ページへ追記します。</p><h2>Cookie・ブラウザー情報</h2><p>現在、当サイト独自のアクセス解析やCookieを利用した追跡機能は導入していません。将来Cookie等を使用する機能を追加する場合は、その目的と設定方法を説明します。外部サイトに移動した場合は、移動先のポリシーが適用されます。</p><h2>アフィリエイト・外部リンク</h2><p>当サイトはアフィリエイト広告を利用しています。広告リンクを経由して移動した場合の情報の取り扱いは、リンク先や広告サービスのポリシーをご確認ください。当サイトは外部サイトのプライバシー保護や内容を管理しません。</p><h2>お問い合わせ情報</h2><p>現在、送信フォームはありません。問い合わせ窓口を設ける場合は、取得情報、利用目的、保存期間、管理方法を明示します。</p><h2>ポリシーの変更</h2><p>サイトの機能や適用されるルールに応じて内容を見直し、変更後の内容と更新日をこのページに掲載します。</p></section>; }
